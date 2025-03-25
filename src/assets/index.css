@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /* muncul logo */
+ #splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Atur warna latar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  /* Gaya untuk logo */
+  #splash img {
+    width: 250px; /* Atur ukuran logo */
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  /* Efek animasi fade-in */
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% { opacity: 0.5; }
+  }
+  /* Sembunyikan splash screen setelah selesai */
+  body.loaded #splash {
+    display: none;
+  }
+  /* --------------------------------------------------- */

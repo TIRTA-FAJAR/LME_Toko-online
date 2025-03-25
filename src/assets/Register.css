@@ -1,0 +1,99 @@
+/* Container */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+  }
+
+hr {
+    margin: 5px 20px 15px 20px;
+    border-color: #ef4949;
+  }
+  
+  /* Title */
+  .register-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+    
+  }
+  
+  /* Form */
+  .register-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    background: #c1707010;
+    transition: all 1s ease;
+
+  }
+  
+  .register-form:hover{
+    box-shadow: 0px 5px 15px #e77575;
+  }
+
+  .form-group {
+    margin: 30px 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.95rem;
+  }
+  
+  .form-input:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+  }
+  
+  /* Button */
+
+  .regist-regist {
+    display: flex;
+    justify-content: right;
+  }
+
+  .submit-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-right: 20px;
+    background: #c1707060;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    transition: 0.5s;
+    background: #c17070;
+    color: #000000;
+  }
+  
+  /* Message */
+  .message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: green;
+    text-align: center;
+  }
+  
