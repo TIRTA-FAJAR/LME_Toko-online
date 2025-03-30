@@ -50,65 +50,78 @@ body {
   color: #f8e6e6;
 }
 
+/* ========================================== */
+/* FOOTER */
+
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #c1707080;
   box-shadow: 0px 0px 50px #e77575;
   text-align: center;
   color: white;
   text-align: center;
   font-size: 15px;
-  padding: 10px 300px;
-  margin-top: 26%; /* Dorong footer ke bawah */
+  padding: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
-.footer > .pertama > img {
-  margin: 0px 0px 10px 35px;
-  width: 80px;
+.footer > .pertama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  background-color: #450a0a80;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
   /* border: 1px solid; */
 }
 
-.footer > .pertama {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 10px;
-  background-color: #450a0a80;
-  padding: 10px 10px;
-  border-radius: 5px;
-  color: white;
-  width: 20%;
-  margin: 50px 0px;
-  /* border: 1px solid; */
+.footer > .pertama > img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
 }
+
 
 .footer > .isi {
   /* border: 1px solid; */
   color: white;
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  margin-left: 30px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footer > .isi > .coment {
   /* border: 1px solid; */
   text-align: justify;
-  margin: 50px 0px;
 }
 
-.footer > .isi > .sosmed {
-  margin-top: 10px;
+.coment p {
+  margin: 5px 0px;
+}
+
+.sosmed {
   display: flex;
-  flex-direction: column;
-  /* border: solid 1px black; */
-  margin-left: 50px;
-  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.footer > .isi > .sosmed  img {
+.sosmed div{
+  display: flex;
+flex-direction: column;
+align-items: center;
+ /* border:  solid 1px black; */
+}
+
+.sosmed  img {
   max-width: 25px;
   margin: 10px;
   background-color: rgb(246, 245, 241);
@@ -116,7 +129,7 @@ body {
   background-color: #f8e6e6;
 }
 
-.footer > .isi > .sosmed  img:hover{
+.sosmed  img:hover{
   background-color: rgb(158, 152, 152);
   transform: scale(1.1);
   transition: 0.8s;
@@ -133,3 +146,29 @@ body {
   border-bottom: 1px solid black;
   transition: 2s;
 }
+
+@media (min-width: 770px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .footer .isi {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .coment {
+    max-width: 900px;
+  }
+
+  .pertama {
+   margin-right: 10px;
+
+   width: 50%;
+  }
+}
+
+

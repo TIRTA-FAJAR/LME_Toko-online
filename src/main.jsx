@@ -9,11 +9,3 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>, 
 )
-
-// muncul logo
-window.addEventListener("load", function() {
-  setTimeout(function() {
-    document.body.classList.add("loaded");
-  }, 2000); // durasi
-});
-

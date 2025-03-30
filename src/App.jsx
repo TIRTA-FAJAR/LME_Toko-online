@@ -12,9 +12,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div id="splash">
-        <img src={logo} alt="LME" />
-      </div>
+   
 
       <div className="flex justify-around" id="navbar">
         <img src={dblogo} alt="LME" className="logo" />
@@ -50,9 +48,10 @@ function App() {
         </div>
         <div class="isi">
           <div class="coment">
-            <p>Terima kasih telah mengunjungi situs kami. Kami siap melayani Anda!</p>
-            <p>Beli produk asli lokal berkualitas internasional hanya di LME!</p>
-            <p>Bila ada sesuatu yang ingin di sampaikan, kirim pesan pada sosial media kami yang tertera.</p>
+            <p>Terima kasih telah mengunjungi situs kami. Kami siap melayani Anda!, 
+              Beli produk asli lokal berkualitas internasional hanya di LME!. 
+              Bila ada sesuatu yang ingin di sampaikan anda bisa 
+              kirim pesan pada sosial media kami yang tertera.</p>
           </div>
           <div class="sosmed">
             <div class="instagram">
