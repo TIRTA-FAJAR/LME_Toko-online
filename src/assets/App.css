@@ -4,28 +4,35 @@ body {
   flex-direction: column;
 }
 
-.logo {
-  height: 2.5em;
-  margin-right: auto;
-  margin-left: 2em;
-  margin-top: 13px;
-  margin-bottom: 10px;
-}
-
-
-#navbar{
-  background-color: #c1707080;
+.navbar{
+  background-color: #b45454;
   border-bottom: solid 2px #fffefe50;
   box-shadow: 0px 5px 10px #e77575;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
 
+.logo {
+  height: 3.5em;
+  margin: 15px 0px;
+}
+
+.menu {
+  position: relative;
 }
 
 .pilih {
   color: #f8fafc;
-  border-right: solid 1px #ffc0cb20;
-  padding-top: 5px;
+  border-right: solid 1px #d85e72e4;
   transition: all 1s ease;
+  padding: 10px 25px;
+  margin-right: 10px;
 }
 
 .pilih:hover {
@@ -36,18 +43,18 @@ body {
 }
 
 .app-login {
-  margin-right: 16px;
-  background-color: #f8e6e6;
-  color: black;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: all 1s ease;
+  width: 200px;
+  height: 55px;
+  background-image: url("../src/assets/img/login.png");
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+  margin: 5px 0px 0px 10px;
 }
 
 .app-login:hover{
-  background-color: rgb(242, 9, 48);
-  filter: drop-shadow(0 0 4em #fffffe);
-  color: #f8e6e6;
+  filter: drop-shadow(0 0 0.7em #f5f5f5);
+  background-image: url("../src/assets/img/login2.png");
+  width: 300;
 }
 
 /* ========================================== */
@@ -148,6 +155,63 @@ align-items: center;
 }
 
 @media (min-width: 770px) {
+
+  .navbar{
+    background-color: #b45454;
+    border-bottom: solid 2px #fffefe50;
+    box-shadow: 0px 5px 10px #e77575;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logo {
+    height: 3.5em;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    padding: 15px;  
+    display: flex;
+    justify-content: end;
+  }
+  
+  .pilih {
+    color: #f8fafc;
+    border-right: solid 1px #ffc0cb20;
+    padding: 10px 25px;
+    transition: all 1s ease;
+    margin: 5px 10px;
+  }
+  
+  .pilih:hover {
+    color: black;
+    filter: drop-shadow(0 0 4em #fffffe);
+  }
+  
+  .app-login {
+    width: 200px;
+    height: 55px;
+    content: none;
+    background-image: url("../src/assets/img/login.png");
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+    margin: 0px;
+  }
+  
+  .app-login:hover{
+    content: none;
+    filter: drop-shadow(0 0 0.7em #f5f5f5);
+    background-image: url("../src/assets/img/login2.png");
+    width: 300;
+  }
+  
+
+  /* ======================== */
+  /* Footer */
   .footer {
     flex-direction: row;
     justify-content: space-between;
@@ -170,5 +234,4 @@ align-items: center;
    width: 50%;
   }
 }
-
 

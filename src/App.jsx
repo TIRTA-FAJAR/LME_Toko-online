@@ -12,22 +12,16 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function App() {
   return (
     <Router>
-   
-
-      <div className="flex justify-around" id="navbar">
+       <div class="navbar">
         <img src={dblogo} alt="LME" className="logo" />
-        <div className="text-gray-50" id="">
-          <ul className="flex justify-end mt-5 pr-10">
-            <li className="mr-6 pr-2 pl-2 rounded-bl-lg pilih">
-              <Link to="/menu">Menu</Link>
-            </li>
-            <li className="mr-6 pr-2 pl-2 rounded-bl-lg pilih">
-              <Link to="/about">About</Link>
-            </li>
-            <li className='app-login'>
-              <Link to="/login">Login</Link>
-            </li>
+        <div className="text-gray-50 menu" id="">
+          <ul className="flex justify-end">
+          <Link to="/menu"><li className="rounded-bl-lg pilih">
+              Menu</li></Link>
+            <Link to="/about"><li className="rounded-bl-lg pilih">
+             About</li></Link>
           </ul>
+          <Link to="/login"><div className='app-login'></div></Link>
         </div>
       </div>
 
