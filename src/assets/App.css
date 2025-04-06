@@ -177,6 +177,8 @@ align-items: center;
     padding: 15px;  
     display: flex;
     justify-content: end;
+    flex-direction: row;
+    margin-left: auto;
   }
   
   .pilih {
@@ -184,7 +186,7 @@ align-items: center;
     border-right: solid 1px #ffc0cb20;
     padding: 10px 25px;
     transition: all 1s ease;
-    margin: 5px 10px;
+    margin: 5px 5px;
   }
   
   .pilih:hover {
@@ -199,13 +201,29 @@ align-items: center;
     background-image: url("../src/assets/img/login.png");
     background-size: cover;
     transition: background-image 0.3s ease-in-out;
-    margin: 0px;
+    margin-left: 5px;
   }
   
   .app-login:hover{
     content: none;
     filter: drop-shadow(0 0 0.7em #f5f5f5);
     background-image: url("../src/assets/img/login2.png");
+    width: 300;
+  }
+
+  .app-register {
+    width: 200px;
+    height: 55px;
+    content: none;
+    background-image: url("../src/assets/img/register.png");
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+  }
+  
+  .app-register:hover{
+    content: none;
+    filter: drop-shadow(0 0 0.7em #f5f5f5);
+    background-image: url("../src/assets/img/register2.png");
     width: 300;
   }
   

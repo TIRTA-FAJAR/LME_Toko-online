@@ -2,7 +2,6 @@ import React from 'react';
 import './assets/App.css';
 import logo from "./assets/img/LME.png";
 import dblogo from "./assets/img/dbLME.png";
-import About from './pages/About';
 import Menu from './pages/Menu';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -13,15 +12,12 @@ function App() {
   return (
     <Router>
        <div class="navbar">
-        <img src={dblogo} alt="LME" className="logo" />
+        <Link to="/menu">
+          <img src={dblogo} alt="LME" className="logo" />
+        </Link>
         <div className="text-gray-50 menu" id="">
-          <ul className="flex justify-end">
-          <Link to="/menu"><li className="rounded-bl-lg pilih">
-              Menu</li></Link>
-            <Link to="/about"><li className="rounded-bl-lg pilih">
-             About</li></Link>
-          </ul>
-          <Link to="/login"><div className='app-login'></div></Link>
+            <Link to="/register"><div className='app-register'></div></Link>
+            <Link to="/login"><div className='app-login'></div></Link>
         </div>
       </div>
 
@@ -29,11 +25,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/about" element={<About />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
-
+919 256
       {/* <!-- FOTTER --> */}
       <div class="footer">
         <div class="pertama">

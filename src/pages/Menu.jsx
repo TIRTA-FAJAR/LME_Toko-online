@@ -8,7 +8,7 @@ const Menu = () => {
     <>
       <div class="menu-container">
         <div class="menu-judul">
-          <h1>Welcome SEMUANYA</h1>
+         
         </div>
         <div class="content">
           <div class="content-isi">
